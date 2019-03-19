@@ -1,3 +1,8 @@
+--Create Database
+sqlplus / as sysdba
+username: system
+password: pune
+grant connect.resource,dba to ELearning identified by management;
 
 --Create Table Address
 create table EAddress(Address_Id Number(3) not null, Address_Line_1 varchar(50) not null, Address_Line_2 varchar(50), City varchar(15) not null, State varchar(15), Country varchar(15) not null, Pin_Code Number(6) not null, primary key(Address_Id));
